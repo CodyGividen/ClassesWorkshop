@@ -16,6 +16,9 @@ public class Pet {
         this.gender = gender;
     }
 
+    public Pet() {
+    }
+
     public String getOwnerName() {
         return ownerName;
     }

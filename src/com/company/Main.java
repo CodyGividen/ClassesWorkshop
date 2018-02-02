@@ -22,7 +22,7 @@ private String MyString;
 //// is defualt promissions
 
     public static void main(String[] args) {
-        Dog dog = new Dog("person","jeff","None YA",3,'F',true, false, "The Best Kind");
+        Dog dog = new Dog(true, true, "big");
         Kat kat = new Kat("other person","Mat","Buisness",2,'M',true,23,true,64.82);
 //        System.out.println(dog.makeSound() + kat.makeSound());
 
