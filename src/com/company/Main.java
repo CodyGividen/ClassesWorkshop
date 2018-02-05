@@ -22,8 +22,9 @@ private String MyString;
 //// is defualt promissions
 
     public static void main(String[] args) {
-        Dog dog = new Dog(true, true, "big");
-        Kat kat = new Kat("other person","Mat","Buisness",2,'M',true,23,true,64.82);
+//        Dog dog = new Dog(true, true, "big");
+        System.out.println("                           ");
+        Kat kat = new Kat(true, 2,true, 123, true, true, "yes");
 //        System.out.println(dog.makeSound() + kat.makeSound());
 
 

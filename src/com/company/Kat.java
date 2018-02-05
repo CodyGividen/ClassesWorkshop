@@ -12,7 +12,7 @@ public class Kat extends Pet{
     private String furType;
     private Scanner input2 = new Scanner(System.in);
 
-    public Kat(boolean drinksMilk, int numberOfToys, boolean eatsLasagna, double weight, boolean likesCatnip, boolean usesLittlebox, String furType, Scanner input2) {
+    public Kat(boolean drinksMilk, int numberOfToys, boolean eatsLasagna, double weight, boolean likesCatnip, boolean usesLittlebox, String furType) {
         this.drinksMilk = drinksMilk;
         this.numberOfToys = numberOfToys;
         this.eatsLasagna = eatsLasagna;
@@ -32,8 +32,9 @@ public class Kat extends Pet{
             catAge= petHumanAge = 19;
         }else if(petHumanAge == 2) {
             catAge = petHumanAge = 24;
-        }else(petHumanAge > 2);
-            catAge = petHumanAge = (petHumanAge
+        }else{
+            catAge = (petHumanAge * 4 + 22);}
+        System.out.println(petName + " is " + petHumanAge + " in human years and " + catAge + " in cat years.");
 
 
 //    public Kat(String ownerName, String petName, String homeAddress, int age, char gender, boolean drinksMilk, int numberOfToys, boolean eatsLasagna, double weight) {

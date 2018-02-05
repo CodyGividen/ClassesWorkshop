@@ -28,9 +28,9 @@ public class Dog extends Pet{
     private Scanner input = new Scanner(System.in);
 
     public Dog(boolean likesWalks, boolean canFetch, String coatType) {
-        int petHumanAge;
+        double petHumanAge;
         String petName;
-        int dogAge;
+        double dogAge;
         this.likesWalks = likesWalks;
         this.canFetch = canFetch;
         this.coatType = coatType;
@@ -40,7 +40,6 @@ public class Dog extends Pet{
         petHumanAge = input.nextInt();
         dogAge = petHumanAge * 7;
         System.out.println(petName + " is " + petHumanAge + " in human years and " + dogAge + " in dog years. " );
-
     }
 
 
