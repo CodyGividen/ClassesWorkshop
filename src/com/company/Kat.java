@@ -116,4 +116,5 @@ public class Kat extends Pet {
         }
         return super.getPetName() + " is " + super.getAge() + " in human years and " + catYears + " in cat years.";
     }
+    // to use code above uncommit public cat ---------->
 }

@@ -91,7 +91,7 @@ public class Dog extends Pet{
     protected String dogYears(){
         return super.getPetName() + " is " + super.getAge() + " in human years and " + (super.getAge() * 7) + " in dog years.";
     }
-
+// to use code above uncommit the other public dog...---------->
 
 
 }
