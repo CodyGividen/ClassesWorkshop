@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Kat extends Pet{
+public class Kat extends Pet {
     private boolean drinksMilk;
     private int numberOfToys;
     private boolean eatsLasagna;
@@ -28,12 +28,13 @@ public class Kat extends Pet{
         petName = input2.nextLine();
         System.out.println("What is the age of your cat?");
         petHumanAge = input2.nextInt();
-        if(petHumanAge == 1) {
-            catAge= petHumanAge = 19;
-        }else if(petHumanAge == 2) {
+        if (petHumanAge == 1) {
+            catAge = petHumanAge = 19;
+        } else if (petHumanAge == 2) {
             catAge = petHumanAge = 24;
-        }else{
-            catAge = (petHumanAge * 4 + 22);}
+        } else {
+            catAge = (petHumanAge * 4 + 22);
+        }
         System.out.println(petName + " is " + petHumanAge + " in human years and " + catAge + " in cat years.");
 
 
@@ -58,9 +59,7 @@ public class Kat extends Pet{
 //        if(input2.System.in = 1){
 
 
-
-        }
-
+    }
 
 
     public boolean isDrinksMilk() {
@@ -98,5 +97,23 @@ public class Kat extends Pet{
     @Override
     protected String makeSound() {
         return super.makeSound() + " Also cats go meow";
+    }
+    protected String catYears(){
+        int catYears;
+        switch(super.getAge()){
+            case 0:
+                catYears = 0;
+                break;
+            case 1:
+                catYears = 19;
+                break;
+            case 2:
+                catYears = 24;
+                break;
+            default:
+                catYears = (super.getAge() - 2 * 4 + 24);
+                break;
+        }
+        return super.getPetName() + " is " + super.getAge() + " in human years and " + catYears + " in cat years.";
     }
 }

@@ -88,6 +88,10 @@ public class Dog extends Pet{
     protected String makeSound() {
         return super.makeSound() + " But dogs bark";
     }
+    protected String dogYears(){
+        return super.getPetName() + " is " + super.getAge() + " in human years and " + (super.getAge() * 7) + " in dog years.";
+    }
+
 
 
 }
